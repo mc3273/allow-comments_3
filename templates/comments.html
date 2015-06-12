@@ -1,0 +1,36 @@
+{%extends "lessons.html" %}
+
+{% block content %}
+
+	</div>
+	<br>
+	<div id="toForm" style="color:red; font-weight:bold">{{ error }}</div>
+	<form action = "/notes?notebook_name ={{ notebook_name }}" method="post">
+		<div><input type = "text" name="title" placeholder="Enter Name"></div>
+		<div><textarea name = "content" rows = "9" cols = "80"></textarea><div>
+		<div><input type= "Submit" value = "Submit Notes"></div>
+	</form>
+
+	
+    </form>
+
+	<a href="{{ url|safe }}" style="color:white">{{ url_linktext }}</a>
+
+	<div class = "content">
+
+		
+
+			<h2>Users' Notes</h2>
+			{% for note in notes %}
+				{% if note.title %}
+					<h3> {{note.title}} </h3>
+				{% endif %}
+					<p>{{note.content}}
+						<br>
+						
+			{% endfor %}
+
+	</div>
+	
+
+{% endblock %}

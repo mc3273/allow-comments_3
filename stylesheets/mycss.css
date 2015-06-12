@@ -1,0 +1,124 @@
+
+*{
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box; 
+}
+
+body {
+    background: url("silver-metal.jpg") no-repeat center center fixed !important;
+    background-size: cover !important;
+}
+header {
+    display: block;
+    margin-bottom: -20px;
+    background-size: cover;
+}
+h1 {
+    background: url("metalgrate.jpg") no-repeat center center fixed !important;
+    font-family: calibri, "san serif";
+    font-variant: small-caps;
+    font-size: 4em;
+    padding: 20px 0px 20px 100px;
+    letter-spacing: 2px;
+    margin: -15px -8px 0px -8px;
+    color: black;
+    text-align: center;
+}
+h2 {
+    font-size: 2.9em;
+    font-variant: small-caps;
+    font-family: sans-serif;
+    color: blue;
+    text-align: center;
+}
+h3 {
+    font-size: 1.9em;
+    margin-bottom: 0px;
+    font-family: calibri, "san serif";
+    color: blue;
+}
+.table {
+    background: blue;
+    color: white;
+    text-align: center;
+    margin: 10px -8px 0px -8px;
+}
+.list li {
+    display: inline-block;
+    text-align: center;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    padding: 5px 5px;
+    margin-top: 0px;
+}
+.list li:before {
+    content: '|      ';
+}
+.list li:first-child:before {
+    content: none;
+}
+.list li:hover {
+    text-decoration: underline;
+    color: #ffe764;
+}
+.list ul {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 0px;
+    padding: 4px 4px;
+}
+.list ul li {
+    background: white;
+    color: black;
+    display: block;
+    text-align: left;
+    margin: 0px 15px 0px 0px;
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 7px 10px 7px 10px;
+}
+.list ul li:hover {
+    background: #ffe764;
+    color: black;
+}
+.list ul li:before {
+    content: none;
+}
+.list li:hover ul {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+.list li ul {
+    display: block;
+    position: absolute;
+}
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+.actualContent {
+    font-size: 25px;
+    color: black;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 3px -12px 3px -12px;
+    text-align: center;
+}
+.content {
+    font-size: 25px;
+    color: black;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 3px -12px 3px -12px;
+    text-align: center;
+}
+
+
+
+
+
+

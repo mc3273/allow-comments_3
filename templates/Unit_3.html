@@ -1,0 +1,156 @@
+{% extends "lessons.html" %}
+
+{% block content %}
+
+    <div class = "unit_3">
+        <div class = "content">
+            <h2> Add Video to Your Page </h2>
+                        
+            <h3> <b>Power of Abstration</b></h3> 
+
+            <p>Abstraction is a core concept in all of computer science. The process of generalizing in order to manage intellectual complexity. It may involve identifying common elements between different instances, or identifying the most important elements of a given instance and intentionally disregarding other elements.</p>
+
+           
+            <p>It is the power of abstraction that makes the creation of large, complex software systems possible. </p>
+            
+
+            <p> <b>Abstracting</b> something means to give names to things, so that the name captures the core of what a function or a whole program does. </p> 
+
+            <h3><b>"Python Functions"</b></h3>
+           
+            <p> A  <b>function</b> is a named sequence of statements that belong together. Their primary purpose is to help us organize programs into chunks that match how we think about the problem. </p>
+            
+            <p> The syntax for a function definition is:
+            <b> def NAME( PARAMETERS ):STATEMENTS </b> </p>
+            
+            <p> You can make up any names you want for the functions you create, except that you can’t use a name that is a Python keyword, and the names must follow the rules for legal identifiers.
+            There can be any number of statements inside the function, but they have to be indented from the def.-If statements, Loops, and functions  </p>
+
+            
+            <p>Creating a new function gives you an opportunity to name a group of statements. Functions can simplify a program by hiding a complex computation behind a single command. The function (including its name) can capture your mental chunking, or abstraction, of the problem.</p>
+
+            
+            <p> Creating a new function can make a program smaller by eliminating repetitive code.</p>
+
+             
+            <h3><b>"Python Loops" <b></h3>
+
+            
+            <p>A <b>while loop</b> statement in Python programming language repeatedly executes a target statement as long as a given condition is true.</p>
+
+            
+            <p>The syntax of a while loop in Python programming language is −while expression:statement(s)</p>
+
+            
+            <p>Statement(s) may be a single statement or a block of statements. The condition may be any expression, and true is any non-zero value. The loop iterates while the condition is true.</p>
+
+            
+            <p>When the condition becomes false, program control passes to the line immediately following the loop.</p>
+            
+            <p>In Python, all the statements indented by the same number of character spaces after a programming construct are considered to be part of a single block of code. Python uses indentation as its method of grouping statements.</p>
+
+            
+            <p><img src="http://www.tutorialspoint.com/python/images/python_while_loop.jpg" style="max-width:100%;" alt="CodeVerify"> </p>
+
+            <h3><b>"Python Infinate Loops" </b></h3>
+            
+            <p>A loop becomes <b>infinite </b> loop if a condition never becomes false. You must use caution when using while loops because of the possibility that this condition never resolves to a false value. This results in a loop that never ends. Such a loop is called an infinite loop.</p>
+
+            
+            <p>An infinite loop might be useful in client/server programming where the server needs to run continuously so that client programs can communicate with it as and when required.</p> 
+
+         <h3>"The Else Statement Used with Loops" </h3>
+            
+            <p>Python supports to have an else statement associated with a loop statement.If the else statement is used with a for loop, the else statement is executed when the loop has exhausted iterating the list.</p>
+            
+            <p>If the else statement is used with a while loop, the else statement is executed when the condition becomes false.</p>  
+
+         <h3>"Python Class" </h3>
+
+           
+        <p> <b>Class</b> A user-defined prototype for an object that defines a set of attributes that characterize any object of the class. The attributes are data members (class variables and instance variables) and methods, accessed via dot notation.</p>
+            
+        <p>Classes give us the ability to create more complicated data structures that contain arbitrary content.</p>   
+            
+        <p>For Example: Class e.g. class Turtle. Neatly package box allows us to write code like turtle.Turtle()."A class Turtle, much like a blueprint, contains certain pieces of information about a turtle: the turtle's size, its color, the fact that the Turtle can move forward..."It would be more accurate to say that the class Turtle indicates the fact that it has a size and a color. Individual instances of the Turtle will contain information about their sizes and their colors. </p>   
+
+        <h3><b>"Code Re-Use"</b> </h3>
+            
+            <p>Code reuse, also called software reuse, is the use of existing software, or software knowledge, to build new software, following the reusability principles.</p>
+
+            
+            <p>Use what's out there to become a more efficient programmer.For Example: Stack Overflow, Google, Github, many many more...</p>
+
+        <h3><b>"More on Classes!"</b> </h3>
+
+            
+        <p><b>Using Classes</b> When we call web browser open calling function. When we call turtle the int inside turtle get's called 
+
+        
+        <p><b>1) </b> A class is a set of instructions with predefined capabilities. <b> 2)</b> An instance is like a copy of the instructions that it remembers. You can create many copies that are independent to each other. <b> 3) </b> A class is a like DNA, where by knowing the capabilities, you can create many instances of it.Lesson 2b Send Text (using Classes).</p> 
+            
+        <p>A class is a container or blueprint that holds all the attributes of a particular set of objects that are yet to be created. To be specific it holds the data members (class variables and instance variables) and methods that are called on via dot notation. <b> For example </b> within the class turtle there is a class Turtle and we call it by creating an instance or object like: brad = turtle.Turtle()</p>   
+
+            
+        <p>An instance of a class is an object created that is an example of what can be made with a class and different attributes of the class can be called specifically and defined.</p> 
+
+            
+        <p>A class might be similar to a genome of an animal in that it is the container of instructions or potential makeup of an organism. A class defined as human is defined by certain boundaries of its attributes and functions that make it genuinely human, but there is room within this class to generate many and indeed infinite permutations of the variable and methods that define what it is to be human. Hair Color ranging from white to black to blonde to brown with each instance potentially different. A method might be walking upright on two feet.</p>   
+
+         <h3>"An Instance of a Class" </h3>
+
+            
+        <p>A class is a neatly packaged box that puts things together really well. It allows us to write code such as turtle.Turtle() as if we were calling a function. When we run this code we are really running the function def init , or 'initialize' in class Turtle - and it creates space in the computer's memory for us to perform different tasks within Turtle. </p>
+
+            
+        <p>An instance of a class allows us to use a particular class to serve whatever purpose we need it to serve in for whatever program we may be writing in Python. An instance is something we can give a variable name to using an assignment. We can than use that name to call different functions inside the class using said name. If we run the assignment brad = turtle.Turtle() , we can then use code such brad.forward(100) to utilize the forward function from within class Turtle, which is nested inside module turtle.</p> 
+
+        <h3><b>"Python: Built in Functions" </b></h3>
+            
+        <p>The Python interpreter has a number of functions built into it that are always available. They are listed here in alphabetical order.</p>
+            
+        <p>Python: Built in Functions: <a href="https://docs.python.org/2/library/functions.html"> Built In functions </a></p> 
+
+         <h3><b>"Google Style Guide" <b></h3>
+            
+        <p>Shows all Conventions on style e.g. how to name things. Good practice to kept class definition in one file and use your call class in another file </p>
+            
+        <p>Google Style Guide: <a href="http://google-styleguide.googlecode.com/svn/trunk/pyguide.html"> Style Guide </a></p>  
+
+        <h3><b>"Vocabulary Review" </b></h3>
+            
+        <p><b>Class </b> - allows us to make classes, think of it as blueprint, classes can have data and methods </p>
+
+        <p><b>Instance</b>- You can create multiple instances of a class, in this example we created an instance of toy story, and avatar, when you create a instance the class constructor get's called.</p>
+
+        <p><b>Constructor</b> - init method inside class, uses keyword as self, self can be thought of as the instance in questions, so when toy story is getting created self is toy story</p>
+
+        <p><b> Instance Variable </b> - all variables associated with an instance, unique to an object and can be accessed with self</p>
+
+        <p><b> Instance Messages </b> - all of the functions inside the class and associated inside the instance </p>
+
+        <p><b>Data member</b> - A class variable or instance variable that holds data associated with a class and its objects.</p>
+
+        <p><b> Inheritance </b>- The transfer of the characteristics of a class to other classes that are derived from it.</p>
+
+        <p><b> Instantiation </b>- The creation of an instance of a class.</p>
+
+        <p><b>Method</b>- A special kind of function that is defined in a class definition.</p>
+
+        <p><b> Operator overloading</b>- The assignment of more than one function to a particular operator.</p>
+
+        <h3><b>"Pre-existing Class Variables" </b></h3>
+            
+        <p>In python we have many pre-existing class variables that can be used.  </p>
+
+        <p>Check out the other predefined variable name and module </p>
+
+        <p>Pre Defined Variables <a href="http://www2.lib.uchicago.edu/keith/courses/python/class/5/"> Pre Defined Var</a></p>
+
+               
+    </div>
+
+
+</div>
+
+{% endblock %}

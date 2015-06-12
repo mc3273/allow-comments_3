@@ -1,0 +1,303 @@
+{% extends "lessons.html" %}
+
+{% block content %}
+
+
+    <div class = "unit_4">
+		<div class = "content">
+		    <h2> Introduction to Networks</h2>
+		                
+		    <p>
+		     A <b> network </b> is a group of entities that can communicate, even though they are not directly connected. </p>
+
+		    <p>
+			There are many types of computer networks, including the following:</b>
+							
+			<ul> 
+				
+				<li>local-area networks (LANs): The computers are geographically close together (that is, in the same building).</li>
+
+				<li> wide-area networks (WANs): The computers are farther apart and are connected by telephone lines or radio waves. </li>
+
+				<li>campus-area networks (CANs): The computers are within a limited geographic area, such as a campus or military base.</li>
+
+			</ul>	
+			</p>
+			<p>
+			<img src="https://sp.yimg.com/ib/th?id=JN.%2bJN6GZ9c7fbxfm0OVrATjA&pid=15.1&P=0" style="max-width:100%;" alt="Network"> </p>
+
+		                
+
+		              
+
+		    <h3>  How to make a Network Work </h3>
+
+		    <ul>
+				
+				<li>We need a way to encode and interpret messages</li>
+
+				<li>We need a way to route messages</li>
+
+				<li>We need rules!</li>		
+
+			</ul>
+		                
+		    <h3> Measuring Networks </h3>
+		    <ul> 
+				
+				<li> <b> Latency</b> Time it takes for a message to get from the source to the destination, from the start of the message, unit of time measured in milliseconds today </li>
+
+				<li> <b> Bandwith</b> Amount of information that can be transmitted per unit time, once you have some part of the message across what is the rate it can be received. Can be measured in MBPS(Megs bit's per second) </li>
+
+				<li> <b> Bit</b> 1 bit = smallest unit of information, in computing we think of it as 0 and 1, If you have more bits you can encode more things </li>
+
+				<li> <b> Protocal</b> set of rules that people agree to that set a policy on how to get through the internetOn the web we use HTTP - Hypertext Transfer Protocol </li>
+
+			</ul>
+		</div>
+
+	<div class = "actualContent">
+		    <h2 > Make the Internet Work for You</h2>
+		                
+		     <p> A  <b>HTML structure</b> An HTML 4 document is composed of three parts: </p>
+
+			<h3><p> <b>Breaking down a URL</b></p></h3>
+
+			<ul> 
+				
+				<li><b>http://:</b> "HTTP" stands for Hypertext Transfer (or Transport) Protocol, and is the identification technology used to communicate between Web servers and the users who access their information.</li>
+
+				<li>  <b>domain name: </b> The domain name is the textual representation of the IP address, used to identify a specific Web page or pages, and comes after the "://".</li>
+
+				<li><b>forward slash,then file name:</b> Path or Directory on the computer to a file </li>
+
+				<li><b>name of file:</b> name of file, usually ending in .html or .htm.</li>
+
+			</ul>
+
+			<p><img src="https://sp.yimg.com/ib/th?id=JN.6L3izw%2bnQUJluHPswJoi%2fA&pid=15.1&P=0" alt="HTML Structure"> </p>
+
+			<p> <b>Get and Post</b></p>
+
+			<ul> 
+				
+				<li><b> POST - Submits data to be processed to a specified resource </b> Note that query strings (name/value pairs) is sent in the HTTP message body of a POST reques. </li>
+
+				<li> <b> GET - Requests data from a specified resource </b> Note that query strings (name/value pairs) is sent in the URL of a GET request.</li>
+			
+			</ul>
+
+			<p> <b>Absolute vs. Relative Path</b></p>
+
+			<ul> 
+				
+				<li>An absolute path is the full URL to a file.</li>
+
+				<li>A relative path points to the location of the file you want to link to in relation to the page being viewed, all within your server space.</li>
+			
+			</ul> 
+
+			<p> <b>HTTP Response Errors </b></p>
+
+				<p><img src="https://sp.yimg.com/ib/th?id=JN.SKr%2byjOixEVzZK%2bm6bR77w&pid=15.1&P=0" alt="Response Error"> </p>
+
+				</p>The following is a list of Hypertext Transfer Protocol (HTTP) response status codes. This includes codes from IETF internet standards as well as other IETF RFCs, other specifications and some additional commonly used codes. </p>
+
+				<p> HTTP Response Errors<a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes"> HTTP Response Errors </a>
+
+				<p> <b>The Purpose of Servers</b></p>A server is a running instance of an application (software) capable of accepting requests from the client and giving responses accordingly. Servers can run on any computer including dedicated computers, which individually are also often referred to as "the server". </p>	
+
+	</div>    
+	<div class = "content">
+		    <h2 > HTML FORMS</h2>
+		                
+		     <p> <b>The Form Element</b> HTML forms are used to collect user input. The FORM element defines an HTML form. HTMl forms contain form elements. Form elements are different types of input elements, checkboxes, radio buttons, submit buttons, and more. </p>
+
+			<p> 1) The input element is the most important, and has many variations, depending on the type attribute. (text, radio, and submit.)input type text defines a one line field or text input. </p>
+
+			<p> 2) Submit defines a button for submitting a form to a form-handler.</p>
+
+			<p> 3)The action attribute defines the action to be performed when the form is submitted. </p>
+
+			<p> 4)The method attribute specifies the HTTP method (GET or POST) to be used when submitting the forms. </p>
+
+			<p> HTML Forms <a href="http://www.w3schools.com/html/html_forms.asp"> HTML Forms </a>
+
+			<p><img src="https://sp.yimg.com/ib/th?id=JN.ySlwcshaO8e4MkqBo6Z8qg&pid=15.1&P=0" alt="HTML Form"> </p>
+
+			<h2 > Importance of Avoiding Repetition</h2>
+
+			 <p> <b> Don't Repeat Yourself</b> Don't Repeat Yourself <b>(DRY)</b>is perhaps one of the most fundamental principles in coding.  The developer who learns to recognize duplication, and understands how to eliminate it through appropriate practice and proper abstraction, can produce much cleaner code than one who continuously infects the application with unnecessary repetition. </p>
+
+			<p> Duplication is waste line of code that goes into an application must be maintained, and is a potential source of future bugs. Duplication needlessly bloats the codebase, resulting in more opportunities for bugs and adding accidental complexity to the system.  </p>
+
+			<p> DRY requires that "every piece of knowledge must have a single, unambiguous, authoritative representation within a system."  </p>
+
+			<p> The DRY principle provides fundamental guidance to software developers and aids the creation of simpler, more maintainable, higher-quality applications.  </p>
+
+			<p> Repetition leads to inconsistency and code that is subtly broken, because you changed only some repetitions when you needed to change all of them. Often, it also means that you haven't properly thought through the organization of your code. Any time you see duplicate code, that's a danger sign. </p>
+
+
+
+	</div>
+
+	<div class = "actualContent">
+		    <h2> Python Break Modules and Dictionaries</h2>
+		                
+		     <p> <b>The Modulus Operator:</b> This is an operator (like +, -, *, or /) that every programming language has.</p>
+
+			<p> <b>Dictionaries:</b> This is another data structure, similar to a Python List. A dictionary data structure is one which is capable of storing objects in sorted order based on key such as a string or an integer. </p>
+			
+			<p> Dictionaries <a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries"> Dictionaries</a>	
+	</div>
+
+	<div class = "content">
+		    <h2> Google App Engine</h2>
+		                
+		     <p><b>Google App Engine</b> let's you build and run applications on Googles Infrastructure</p> 
+
+			<p> App Engine includes a simple web application framework, called webapp2. The webapp2 framework is already installed in the App Engine environment and in the SDK.  </p>
+
+			<p> Google App Engine <a href="https://cloud.google.com/appengine/docs/python/"> App Engine</a>	
+
+			<p> App Engine includes a simple web application framework, called webapp2. The webapp2 framework is already installed in the App Engine environment and in the SDK.  </p>
+
+			<p> A <b> webapp2 application </b> has two parts: 1) one or more RequestHandler classes that process requests and 2) build response a WSGIApplication instance that routes incoming requests to handlers based on the URL </p>
+
+			<p> Google App Engine Python Tutorial <a href="https://cloud.google.com/appengine/docs/python/gettingstartedpython27/introduction"> Python Tutorial</a>	
+	
+	</div>
+
+	<div class = "actualContent">
+		    <h2> Validation</h2>
+		                
+		     <p> <b>Validation</b> Verification on the server side that we expect to see what we expected to see </p>
+
+			<p> Data validation is the process of ensuring that computer input is clean, correct, and useful. Typical validation tasks are: 1) has the user filled in all required fields? 2) has the user entered a valid date? 3) has the user entered text in a numeric field?</p>
+
+
+			<p> Most often, the purpose of data validation is to ensure correct input to a computer application. Validation can be defined by many different methods, and deployed in many different ways.</p>
+
+			<p> <b>Server side validation </b> is performed by a web server, after input has been sent to the server.</p>
+
+
+			<p> <b>Client side validation </b> is performed by a web browser, before input is sent to a web server.</p>
+
+			<p>String Substitution</p> With String Substitution you can replace a string with the % sign. Than you can call the string with %OTHERSTRING when the OTHERSTRING can also be a variable. 
+
+			<p><b>Escaping</b> HTML allows you to escape certain methods or change them. Correct way to include text in rendered HTML.</p>
+
+
+			<h2> Importance of Validation as it pertains to Security and the User Experaince</h2>
+
+
+
+			<p>Input validation is both a fundamental defense that a web application relies upon and the most unreliable. A significant majority of web application vulnerabilities arise from a validation failure, so getting this part of our defenses right is essential. </p> 
+
+			<p>Input Validation is the outer defensive perimeter for your web application. This perimeter protects the core business logic, processing and output generation. Beyond the perimeter is everything considered potential enemy territory which is...literally everything other than the literal code executed by the current request.</p>
+
+			<p>Input validation is the “key” to application security. 50 to 60 % of security vulnerabilities in almost 70 % of applications are due to poor input validation.</p>
+
+			<p> <b>There are several attack vectors possible due to poor input validation</b></p>
+
+			<ul> 
+				
+				<li>Cross Site Scripting </li>
+
+				<li> SQL injection</li>
+
+				<li> Buffer overflow </li>
+
+				<li>  Response splitting </li>
+
+				<li> XML injection </li>
+
+				<li> Directory Traversals </li>
+
+				<li>  Denial of service </li>
+			
+			</ul>
+
+			<p>User input validation should be done both at client and server side. In security perspective, Server side validation is a must.</p>
+
+			<p> Client-side validation is always in the sense of providing a better User Experience, so the user doesn't have to submit and reload a page simply because a value in a form isn't valid - it makes things more dynamic.</p>
+
+			<p>Never rely upon client side validation. But for several other benefits , client side validation should be done along with server side. Client side validation provides for a better user experience, think of it as a guide for the user helping ensure an efficient experience. It provides an immediate response to the user allowing them to make immediate changes gaining the ability to move forward with their request. </p>
+
+
+	
+	</div>
+
+	<div class = "content">
+		    <h2> HTML Templates</h2>
+		                
+		     <p> Templates are a great way to seperate different types of code, make more readable code, more secure websites, and HTML is easy to modify.  </p>
+
+			  <p> There is a better way using Template - a template library is a library to build complicated stings </p>
+
+			  <p> HTML embedded in code is messy and difficult to maintain. It's better to use a templating system, where the HTML is kept in a separate file with special syntax to indicate where the data from the application appears. </p>
+
+			<p> <b>Helpful Tips</b></p>
+
+			<ul> 
+				
+				<li>Always automatically escape variables when possible.</li>
+
+				<li>Minimize the code that you include in templates</li>
+
+				<li>Minimize html in code (good rule is zero html in code)</li>
+
+				<li>Use Template Inheritance: This lets you define a base template which you can later plug new HTML into. This is useful when, for example, you want to have a consistent header and footer across your app.</li>
+
+				<li>For Loops</b>Add Repeated Elements: If you've got many divs that all have the same structure, it's much better to use a for loop.</li>
+
+			</ul>
+
+	
+	</div>
+
+	<div class = "actualContent">
+		    <h2> Database</h2>
+		                
+		    <p>  Databases use a series of Tables to store the data. A table simply refers to a two dimensional representation of your data using columns and rows. </p>
+
+			<p> How does the database keep things straight? Each database table is given a unique name. Without a unique name the DBMS (DataBase Management System) would get very confused.</p>
+
+
+			<p> Your table is the Primary Key. The Primary Key simply refers to a column in your table that is guaranteed unique. The Primary Key is then used for the purposes of indexing your table which makes it much more efficient to search, sort, link, etc.</p>
+
+			<p> <b> Datastore</b> Storing data in a scalable web application can be tricky. All web servers need to be interacting with data that is also spread out across dozens of machines, possibly in different locations around the world.</p>
+
+			<p> App Engine's data repository, the High Replication Datastore (HRD), uses the Paxos algorithm to replicate data across multiple datacenters. </p>
+
+			<p>Data is written to the Datastore in objects known as entities. Each entity has a key that uniquely identifies it. An entity can optionally designate another entity as its parent; the first entity is a child of the parent entity.</p>
+
+			<p> An entity's parent, parent's parent, and so on recursively, are its ancestors; its children, children's children, and so on, are its descendants. An entity without a parent is a root entity. </p>
+
+	
+			<p>Every Datastore query computes its results using one or more indexes, tables containing entities in a sequence specified by the index's properties and, optionally, the entity's ancestors.  </p>
+
+			<p><b>An index </b> is defined on a list of properties of a given entity kind, with a corresponding order (ascending or descending) for each property. For use with ancestor queries, the index may also optionally include an entity's ancestors. </p>
+
+			<p><b>String substitution </b> is where we use the "%"" &"s" together to
+			 substitute strings.  It's a place holder for whatever value we are plugging into that spot.  You can sub in one word, or multiple different
+			 words, or even a dictionary.</p> 
+
+			<p>We can use string substitution to save a users input.  For instance, instead of using input type="text" value="cool", we can use "%"+(month)+"s".</p> 
+
+			<p><b>ACID - Atomicity, Consistency, Isolation, Durability</b></p>
+
+			<p><b>A</b> All parts of a transaction succeed or fail together </p>
+
+			<p><b>C</b> The database will always be consistent  </p>
+
+			<p><b>I</b> No transaction can interfere with another's  </p>
+
+			<p><b>D</b> Once the transaction is committed it won't be lost   </p>
+	
+	</div>
+
+
+</div>
+
+{% endblock %}

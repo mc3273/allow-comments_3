@@ -1,0 +1,387 @@
+{% extends "lessons.html" %}
+
+{% block content %}
+
+    <div class = "unit_2">
+        <div class = "content">
+            <h2> Introduction to "Serious" Programming </h2>
+                        
+            <h3> How to get started </h3> 
+
+            <p>A <b> web crawler </b> is a program that collects content from the web. A web crawler finds web pages by starting from a seed page and following links to find other pages, and following links from the other pages it finds, and continuing to follow links until it has found many web pages.
+
+            <p>
+            <h3><b> Web Crawler Process: </b> </h3>
+            <br>    
+            1) Start from one preselected page. We call the starting page the "seed" page.
+
+            <br>    
+            2) Extract all the links on that page. 
+
+            <br>    
+            3) Follow each of those links to find new pages.
+
+            <br>
+            4) Extract all the links from all of the new pages found.
+
+            <br>    
+            5) Follow each of those links to find new pages.
+                Extract all the links from all of the new pages found.
+
+            <br>
+            Note: This keeps going as long as there are new pages to find, or until it is stopped.  
+
+            </p>
+
+            <h3>Overview of Programming </h3>
+            
+
+            <p> 
+            <b> Programming </b> is the core of computer science.
+
+            <br>  
+            A computer is a machine that can execute a program. With the right program, a computer can do any mechanical computation you can imagine.
+
+            <br>        
+            A program describes a very precise sequence of steps. Since the computer is just a machine, the program must give the steps in away that can be executed mechanically. That is, the program can be followed without any thought.
+
+            <br>
+            <b>Python</b> is a programming language. The programs that we write in the Python language will be the input to the Python interpreter, which is a program that runs on the computer. The Python interpreter reads our programs and executes them by following the rules of the Python language.
+            <br>
+
+            </p> 
+
+            
+
+            <h3><b>Why Python!</b></h3>
+
+            
+            <p>
+            Why should you learn new languages, like Python, to program computers, rather than using natural languages like English or Mandarin?
+
+            <br>
+            There are many reasons why a designed language like Python is better for writing programs than a natural language like English. 
+
+            <br>    
+            One problem with natural languages is that they are <b> ambiguous </b>. Hence, not everyone will interpret the same phrase the same way. To program computers, it is important that we know exactly what our programs mean, and that the computer will run them with the meaning we intended.
+
+            <br>
+            Another problem with natural language is that they are very <b> verbose </b>. To say something with the level of precision needed for a computer to be able to follow it mechanically would require an awful lot of writing. You want your programs to be short so it is less work to write them, and so that it is easier to read and understand them.
+
+            </p>
+    <div class = "actualContent">
+            <h2 id = "lesson2.2"> Stage 2 Unit 2</h2> 
+            <h3><b>"Grammer" in Python</b></h3>
+
+            
+            Compared to a natural language, programming languages adhere to a <b> strict grammatical structure</b>. In English, even if a phrase is written or spoken incorrectly, it can still be understood with the help of context or other cues. On the other hand, in a <b>programming language like Python, the code must match the language grammar exactly.</b> The Python interpreter has no idea what to do with input that is not in the Python language, so it produces an error.
+
+            <br>
+            When programming language grammar is not followed the interpreter will return a <b>SyntaxError</b> message. This means that the structure of the code is inconsistent with the rules of the programming language.
+
+            </p>    
+            <h3><b>"Backus-Naur Form</b></h3>
+
+            <p>
+            The notation we used to describe the grammar is known as <b> Backus-Naur Form </b>, which was introduced in the 1950s by John Backus, the lead designer of the Fortran programming language at IBM.
+
+            <br>
+            The purpose of Backus-Naur Form is to describe a programming language in a <b> simple and concise manner</b>. The structure of this form is:
+
+            <br>
+            <b>"Non-Terminal to replacement" </b>
+
+            <br>
+            The replacement can be any sequence of zero or more non-terminals or terminals.
+
+            <br>
+            Terminals never appear on the left side of a rule. Once you get to a terminal there is nothing else you can replace it with. 
+
+            <br>
+            The important thing about a replacement grammar is that we can describe an infinitely large language with a small set of precise rules. 
+            </p> 
+
+            <h3><b>"Expressions" in Python<b></h3>
+            <p>
+            The Expression non-terminal that appears on the left side can be replaced by an Expression, followed by an Operator, followed by another Expression. For example, 1 + 1 is an Expression Operator Expression.
+
+            <br>
+            The interesting thing about this rule is that it has Expression on both the left and right sides! This looks circular, and would be, except we also have other rules for Expression that do not include Expression on the right side. This is an example of a recursive definition. To make a good recursive definition you need at least two rules:
+
+            <br>
+            <b>A rule that defines something in terms of itself. </b>
+
+            <br>
+            <b> Expression to Number </b>
+
+            <br>    
+            Recursive definitions are a very powerful idea in computer science. They allow us to define infinitely many things using a few simple rules.
+
+            <h3><b>"Admiral Grace Hopper" (1906 - 1992)</b></h3>
+
+
+            <p>
+            <img src="http://www.m-w.co.uk/sites/default/files/public/images/grace-hopper.jpg" style="max-width:40%;" alt="Grace Hopper">
+
+            <br>    
+            Grace Hopper was a pioneer in computing who was known for walking around with nanosticks. Nanosticks are pieces of wire that are the length light travels in a nanosecond, about 30 cm.
+
+            <br>
+            Hopper wrote one of the first programming languages, COBOL, which was for a long time the world's most widely used programming language. Hopper built the first compiler. A compiler is a program that takes as input a program in a programming language easy for humans to write and outputs a program in another language that is easier for computers to execute. The difference between a compiler and an interpreter like Python is that a compiler does all the work at once and creates a new program, whereas, the interpreter converts the source code one step at a time as the program runs.
+
+    <div class = "actualContent">
+            <h2 id = "lesson2.3"> Stage 2 Unit 3</h2>  
+
+            <h3><b>Variables<b></h3>
+
+
+            
+            <p>A <b> variable </b> is a name that refers to a value. In Python, we can use any sequence of letters and numbers and underscores (_)when we want to make a variable name, so long as it does not start with a number.
+            <br>
+
+            <p> <img src="http://teaching.software-carpentry.org/wp-content/uploads/2013/05/Python-variables.png" style="max-width:75%;" alt="Variable"> </p>
+
+            <br>
+            <p>To introduce a new variable, we use an assignment statement:<b> Name = Expression </b>
+
+            <br>
+            <p>After executing an assignment expression, the name refers to the value of the expression on the right side of the assignment. We can use the variable name anywhere we want and it means the same things as the value it refers to.</p>
+
+            
+            <p><b> Variables Can Vary </b> - The value a variable refers to can change. When a variable name is used, it always refers to the last value assigned to that variable<p>
+
+            
+            <p>When we use the same variable on both sides of an assignment. The right side is evaluated first, using the current value of the variable. Then the assignment is done using that value.</p>
+
+            
+            <p> Remember that although we use <b> = for assignment </b> it does not mean equality. You should think of the = sign in Python as an arrow, , showing that the value the right side evaluates to is being assigned to the variable name on the left side. </p>
+
+            <p><h3>Comments</h3> 
+
+            <br>    
+            We use the hash mark (#) to introduce a comment. After the hash, we can write anything we want. The rest of the line is treated as a comment. The comment is not interpreted by the Python interpreter, but it is useful for humans reading the code. 
+
+            <br>
+            <h3><b>Strings</b></h3> 
+
+                
+            <p><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqyTSS6adrLa9mNNrIH6QLmLqoUFzioT8X6MYqeY5i_iypx2zx" style="max-width:50%;" alt="String"> </p>
+
+
+            <p> <img src="http://nbviewer.ipython.org/github/ricardoduarte/python-for-developers/blob/master/Chapter5/bpyfd_diags4.png" style="max-width:50%;" alt="Strings"> </p>
+
+            <br>
+            A <b>string</b> is a sequence of characters surrounded by quotes, either single or double.The only requirement is that the string must start and end with the same kind of quote.
+
+            <p><b> Double quotes:</b> This allows you to include quotes inside of quotes as a character in the string.</p>
+
+
+            <p><h3><b>Strings and Numbers</b></h3>  
+            We can also use the plus operator (+) on strings, but it has a different meaning from when it is used on numbers. With string, plus means concatenation.
+
+            
+            <p>You can create a space between the strings by adding a space to one of the strings. You can also continue to add strings as many times as you need.</p>
+
+            <h3><b>Indexing Strings</b></h3> 
+
+            <br>
+            When you want to select sub-sequences from a string, it is called indexing. Use the square brackets [] to specify which part of the string you want to select: <string>[<expression>]
+
+            <p>Indexing strings is the most useful when the string is given using a variable:</p>   
+
+            <p>When you use negative numbers in the index, Python starts counting from the back of the string:</p>
+
+            <h3>Finding Strings in Strings</h3>   
+
+            <p>The find method is a built in operation, or method, provided by Python, that operates on strings. The output of find is the position of the string where the specified sub-string is found.
+
+            <br>
+             If the target string is not found anywhere in the search string, then the output will be -1. </p>
+
+             <p>In addition to passing in a target string to find, you can also pass in a number:</p>    
+
+            <p>The number input is the position in the search string where find will start looking for the target string. So, the output is a number giving the position of the first occurrence of the target string in the search string at, or after the input position. If there is no occurrence at or after that position, the output is -1.</p>  
+
+           <h3><b>Functions<b></h3>   
+
+            <p> <img src="http://www.voidspace.org.uk/python/weblog/images/basic-function-tartley.png" style="max-width:75%;" alt="Function"> </p>
+
+            <p><b> Procedures or Functions </b> - a way to package code so it can be reused with different inputs.</p>
+
+            <p><b>Control</b> - a way to have the computer execute different instructions depending on the data (instead of just executing instructions one after the other).</p>
+
+            <p> Procedural abstraction is a way to write code once that works on any number of different data values. By turning our code into a procedure, we can use that code over and over again with different inputs to get different behaviors. </p>
+
+            <p>A <b> procedure</b> takes in inputs, does some processing, and produces outputs.</p> 
+
+            <p>The keyword def is short for "define".</p>
+
+            <p><b>"name"</b> is the name of a procedure. Just like the name of a variable, it can be any string that starts with a letter and followed by letters, number and underscores.</p>
+
+            <p><b>"parameters"</b> are the inputs to the procedure. A parameter is a list of zero or more names separated by commas: "name", "name",... Remember that when you name your parameters, it is more beneficial to use descriptive names that remind you of what they mean. Procedures can have any number of inputs. If there are no inputs, the parameter list is an empty set of closed parentheses.</p>
+
+            <p>The body of the procedure is a "block", which is the code that implements the procedure. The block is indented inside the definition. Proper indentation tells the interpreter when it has reached the end of the procedure definition.</p>  
+
+            <p> To finish the procedure, we need to produce the outputs. To do this, introduce a new Python statement called <b>return</b>. A return statement can have any number of expressions. The values of these expressions are the outputs of the procedure.</p>
+
+            <p>A return statement can also have no expressions at all, which means the procedure produces no output. This may seem silly, but in fact it is quite useful. Often, you want to define procedures for their side-effects, not just for their outputs. Side-effects are visible, such as the printing done by a print statement, but are not the outputs of the procedure.</p>
+
+            <p> Procedures are a very important concept and the core of programming is breaking problems into procedures, and implementing those procedures.</p>
+
+            <h3><b>Comparison Operators<b></h3> 
+
+            <p> <img src="http://image.slidesharecdn.com/introductiontoprogrammingwithpython-lecture1-140910085055-phpapp02/95/introduction-to-programming-with-python1-18-638.jpg?cb=1410357683" style="max-width:125%;" alt="Comparison Operator"> </p>
+
+            <br>            
+            Python provides several operators for making comparisons. All of these operators act on numbers.</p> 
+
+            <h3>If/Or Statements </h3>  
+
+            <p> <img src="http://img.c4learn.com/2012/03/if-statement-in-java-programming-language1.png" style="max-width:75%;" alt="If Statement"> </p>
+
+            <br>            
+            An if statement provides a way to control what code executes based on the result of a test expression.</p>
+
+            <p>You can use an else clause in addition to an if statement to provide alternative code that will execute when the test expression is false. The test expression determines whether to execute the block inside the if statement or the block inside the else statement.</p>   
+
+
+            <p> An <b> or expression </b> gives the logical or (disjunction) of two operands. If the first expression evaluates to True, the value is True and the second expression is not evaluated. If the value of the first expression evaluates to False then the value of the or is the value of the second expression.</p>
+
+            <p>An important difference between an or expression and other operators is that an or expression does not necessarily evaluate both of its operand expressions </p>
+
+            <h3><b>While Loops <b/></h3>   
+
+            <p> <img src="http://www.c-programming-simple-steps.com/images/Loops_Pre-conditionLoop.png" style="max-width:100%;" alt="While Loop "> </p>
+
+            <br>            
+            Loops are a way of executing something over and over.</p>
+
+            <p>In contrast to an if statement where the block executes either 0 or 1 times depending on whether the test expression is True or False, <b> a while loop executes any number of times, continuing as long as the test expression is True.</b></p> 
+
+            <p> In a if statement if the test expression is True, the block executes once and then continues to the following statement. If the test expression is False, execution jumps over the block and continues with the following statement.
+
+            <br>
+            <p> The test expression for a while loop is True, the block is executed. Then, execution continues by going back to the test expression again. If it still evaluates to True, the block is executed again, and execution continues by going back to the test expression one more time. This continues as long as the test expression evaluates to True. and again as many times as you need. Once the test expression is False, execution jumps to the next statement. There is no guarantee that the test expression eventually becomes False, however. The loop could keep running forever, which is known as an infinite loop.</p>  
+
+            <p> <b> Break </b> gives us a way to break out of a loop, even if the test condition is true.</p> 
+
+    <div class = "actualContent">
+            <h2 id = "lesson2.4"> Stage 2 Unit 4</h2> 
+
+            <h3><b>Structured Data</b></h3>
+
+            <p>A string is considered a kind of structured data because you can break it down into its characters and you can operate on sub-sequences of a string. This unit introduces <b> lists </b>, a more powerful and general type of structured data. Compared to a string where all of the elements must be characters, in a list the elements can be anything you want such as characters, strings, numbers or even other lists!<p>
+
+        
+            <h3> Structured Data String and Lists </h3>
+
+            <p><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeBFcx-r--Q6FDD-CAlNfoCmy2UIQvsz2cGXZwTQQZ1wEOvqFo" style="max-width:75%;" alt="StructuredData"> </p>
+       
+             <h3><b>String</b></h3> 
+                <ul> 
+
+                    <li>elements are characters </li>
+
+                    <li> surrounded by singled or double quotes </li>
+
+                    <li> s = 'yabba!' </li>
+
+                    <li> select elements using "string"["number"] s[0] → 'y'</li>
+
+                    <li>select sub-sequence using "string"["number" : "number"]number</li>
+
+                    <li>immutable</li>
+
+                    <li>cannot change the value of a string</li>
+
+                </ul>
+                        
+
+        
+            <h3><b>List</b> </h4> 
+
+                <ul> 
+                    <li>elements may be any Python value</li>
+
+                    <li>surrounded by square brackets</li>
+
+                    <li> p = ['y','a','b','b','a','!']</li>
+
+                    <li>select sub-sequence using "list"["number" : "number"]</li>
+
+                    <li>mutable </li>
+
+                    <li>changes the value of the first element of p </li>
+
+                </ul> 
+
+                                              
+        <h3><b>Nested Lists </b></h3>  
+
+        <p>         
+        All of the elements in our lists have been of the same type: strings, numbers, etc. However, there are no restrictions on the types of elements in a list. Elements of a list can be any type you want, you can also mix and match different types of elements in a list.</p>
+            
+
+        <h3> Mutation </h3> 
+
+        <p><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4EPCz6DLbT2QtmnBLDvO9C-d3zcqkwCNp0wXsRAARUzt8QcWMFg" style="max-width:75%;" alt="mutation"> </p>
+
+        <p><b>Mutation</b> means changing the value of an object. Lists support mutation. This is the second main difference between strings and lists.</p>     
+        <p>This operation may look like it is changing the value of the string, but that's not what happens. It is not modifying the value of any string, but instead is creating a new string, 'Yellow', and assigning the variable s to refer to that new string. <b> Lists can be mutated, thus changing the value of an existing list. </b></p> 
+
+        <h3> Aliasing</h3>  
+
+        <p><b>Aliasing </b>is when there are two names that refer to the same object. Aliasing is very useful, but also can be very confusing since one mutation can impact many variables. If something happens that changes the state of the object, it affects the state of the object for all names that refer to that object.
+        <br>
+        Strings are Immutable. Note that we cannot mutate strings, since they are immutable objects.</p>  
+
+        <p><b>Mutable</b> and <b>Immutable Objects</b>. The key difference between mutable and immutable objects, is that once an object is mutable, you have to worry about other variables that might refer to the same object. You can change the value of that object and it affects not just variable you think you changed, but other variables that refer to the same object as well.</p>    
+
+        <p>Sometime in the future you will be writing a program and you will find that a variable does not have the value you expected. The cause may be that you changed the value of a variable that you thought was different but actually wasn't (due to the aliasing you just learned about).</p>
+            
+        <h3> List Operations </h3> 
+
+        <p><img src="http://image.slidesharecdn.com/python1-140710074239-phpapp02/95/scripting-in-python-11-638.jpg?cb=1404996795" style="max-width:75%;" alt="mutation"> </p>
+
+        <p>A list object has a number of member methods. These can be grouped arbitrarily into transformations, which change the list, and information, which returns a fact about a list.There are many built-in operations on lists. Use the Python Reference for help! </p>  
+
+        <h3> <b>Loops on Lists </b></h3>   
+
+        <p>Since lists are collections of things, it is very useful to be able to go through a list and do something with every element. </p>
+
+        <p>In Python there is a more convenient way to loop through the elements of a list: <b> the for loop. </b> </p>
+
+         <p> Let's walk-through what happens when you apply this for loop to a list:
+
+        <br>
+        <p> mylist = [1, 2, 3]
+        print_all_elements(mylist) </p>
+
+        <br>
+        When you pass in mylist to print_all_elements the variable p will refer to the list that contains the three elements, 1, 2 and 3. When the loop is executed, the variable e is assigned to the first element in the list, and the body of the loop will print the first element. So, for the first iteration the valueofewillbe1. Theblockisexecuted,printingout1. Sincetherearemoreelementsinthelist, executioncontinues,assigning2tothee. Again,theblockisexecuted,butthistimeitprintsout2. Execution continues for the third iteration, which prints out 3. There are no more elements in the list, so the for loop is complete and execution continues with the next statement (in this case, there is no following statement, so execution finishes).</p>
+
+        <h3> <b>Index </b></h3>    
+
+        <p>There are many other ways to define find_element. A built-in list operation that we have not yet introduced that makes it easier to write find_element is the index method:</p>
+
+        <p>The method index() returns the lowest index in list that obj appears.</p>
+
+         <p>Example,the following example shows the usage of index() method.
+
+         aList = [123, 'xyz', 'zara', 'abc']; </p>
+
+        <p>print "Index for xyz : ", aList.index( 'xyz' ) ;</p>
+
+                    
+        <p>print "Index for zara : ", aList.index( 'zara' ) ;</p>
+
+        <h3> <b>Code Errors <b></h3>  
+
+        <p><img src="http://i.imgur.com/WRuJV6r.png" style="max-width:100%;" alt="CodeVerify"> </p>
+
+        
+    </div>
+
+
+</div>
+{% endblock %}
